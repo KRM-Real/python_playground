@@ -1,9 +1,4 @@
-class Solution(object):
-    def isPalindrome(self, x):
-        """
-        :type x: int
-        :rtype: bool
-        """
+def isPalindrome(x):
         if x < 0:
             return False
 
@@ -18,8 +13,8 @@ class Solution(object):
         return reverse == copy
 
 x = 121
-sol = Solution()
-print(sol.isPalindrome(x))
+sol = isPalindrome(x)
+print(sol)
 
 
 # Main Logic for Checking Palindrome Number
