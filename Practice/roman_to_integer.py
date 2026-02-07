@@ -1,5 +1,5 @@
 class Solution(object):
-    def romanToInt(self, s):
+    def romanToInt(s):
        
         result = 0
         roman_values ={
