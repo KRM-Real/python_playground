@@ -7,3 +7,6 @@ def minDeletion(self, nums):
             res.append(x)
 
     return len(nums) - (len(res) - len(res) % 2 )
+
+input = [1,1,2,3,5]
+print(minDeletion(input))
