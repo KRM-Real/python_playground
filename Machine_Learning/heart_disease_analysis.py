@@ -1,6 +1,4 @@
-# heart_eda_train.py
-# Run: python heart_eda_train.py
-# If your file name is different, change CSV_PATH below.
+# %%
 
 from pathlib import Path
 import numpy as np
@@ -189,8 +187,6 @@ plt.tight_layout()
 plt.show()
 
 # ---------- 7) Inspect feature importance (rough) ----------
-# With one-hot encoding, feature names expand. We'll print top weights.
-# This is optional but helpful.
 try:
     ohe = clf.named_steps["preprocess"].named_transformers_["cat"].named_steps["onehot"]
     cat_feature_names = ohe.get_feature_names_out(categorical_cols)
