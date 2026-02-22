@@ -8,7 +8,8 @@ def lengthOfLastWord(s):
     while start >= 0 and s[start] != " ":
         start -= 1
         
+    
     return end - start
 
-inputs = "luffy is still joyboy"
+inputs = "hello world"
 print(lengthOfLastWord(inputs))
