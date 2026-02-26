@@ -1,19 +1,26 @@
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+def merge(nums1, m, nums2, n):
 
-# You are given the heads of two sorted linked lists list1 and list2.
-# Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
-# Return the head of the merged linked list.
+        right = m + n - 1
+        midx = m-1
+        nidx = n-1
 
-def mergeTwoLists(list1, list2):
+        while nidx >= 0:
+            if midx >= 0 and nums1[midx] > nums2[nidx]:
+                nums1[right] = nums1[midx]
+                midx -=1
 
-    merged_list = list1 + list2
+            else:
+                nums1[right] = nums2[nidx]
+                nidx -= 1
+            
+            right -=1
+        
+        return num1
+            
+num1 = [1,2,3,0,0,0]
+m = 3 
 
-    return sorted(merged_list)
-    
-list1 = []
-list2 = [0]
-print (mergeTwoLists(list1,list2))
+num2 = [2,5,6] 
+n = 3
+
+print(merge(num1, m, num2, n))
