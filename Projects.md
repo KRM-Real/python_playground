@@ -39,4 +39,21 @@ Background Jobs: APScheduler or Celery
 Deployment: Vercel (frontend), Railway/Render (backend)
 
 
+
+AI-Powered Document Processing API
+
+What you build:
+
+Upload PDF/image
+Extract text (OCR)
+Summarize or classify
+Store structured output
+
+Core features:
+Background tasks
+Async file handling
+Queue system (Redis/Celery)
+Cloud storage integration
+
+
 Portfolio 
