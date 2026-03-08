@@ -15,6 +15,7 @@ def titleToNumber(columnTitle):
     
     result = 0
     count = 0
+
     
     # print(columnTitle)
     while i >= 0:
